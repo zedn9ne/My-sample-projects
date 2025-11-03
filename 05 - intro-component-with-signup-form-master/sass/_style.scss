@@ -1,0 +1,171 @@
+html{
+    font-family: "Poppins";
+}
+body{
+    background-image: url(/images/bg-intro-mobile.png);
+    background-color: $Red;
+    max-width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 100%;
+    padding: 6rem 2rem;
+    header{
+        height: 350px;
+        text-align: center;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        h1{
+            line-height: 2.6rem;
+            font-size: 2.2rem;
+        }
+        .text{
+            color: $GrayishBlue;
+            font-weight: 400;
+            font-size: 1.3rem;
+        }
+    }
+    // Form Container
+    .form-container{
+        max-width: 580px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // Offer
+        .offer{
+            height: 150px;
+            min-width: 100%;
+            background-color: $Blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $GrayishBlue;
+            margin-bottom: 2rem;
+            margin-top: 4rem;
+            border-radius: .825rem;
+            box-shadow: 0px 9px 1px rgb(0,0,0,.2); 
+            transition: all .2s ease-in-out;
+            cursor: pointer;
+
+            p{
+                transition: all .2s ease-in-out;
+                width: 50%;
+                text-align: center;
+                line-height: 1.8rem;
+                span{
+                    transition: all .2s ease-in-out;
+                    font-size: 1.2rem;
+                    color: #fff;
+                    font-weight: 600;
+                }
+            }
+        }
+        // Form
+        .form{
+            display: flex;
+            flex-direction: column;
+            height: 700px;
+            background-color: #fff;
+            padding: 1rem 1.5rem;
+            border-radius: .4rem;
+            .logIn{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                padding-top: 1rem;
+                div{
+                    width: 100%;
+                    height: 100px;
+                    span{
+                        display: flex;
+                        width: 100%;
+                        margin-top: .5rem;
+                        justify-content: flex-end;
+                        color: $Red;
+                        transition: ease-out .3s;
+                    }
+                }
+                input{
+                    height: 70px;
+                    border: 1px solid rgb(0,0,0,.2);
+                    border-radius: .5rem;
+                    width: 100%;
+                    padding-left: 2rem;
+                    text-transform: capitalize;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    outline: none;
+
+                }
+                
+                input::placeholder{
+                    padding-left: 1rem;
+                    text-transform: capitalize;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+                input:focus-visible{
+                    border: 1px solid $Green;
+                }
+                // Danger Style 
+                .alert{
+                    background-image: url(/images/icon-error.svg);
+                    background-repeat: no-repeat;
+                    background-position: 95%;
+                    border: 1px solid $Red;
+                    &::placeholder{
+                        color: $Red;
+                    }
+                }
+                // success style
+                .success{
+                    border: 1px solid $Green;
+                }
+                // Button
+                button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 70px;
+                    border: none;
+                    background-color: $Green;
+                    color: #fff;
+                    font-size: 1.35rem;
+                    border-radius: .4rem;
+                    text-transform: uppercase;
+                    transition: all .2s ease-in-out;
+                    box-shadow: 0px 9px 1px hsla(154, 54%, 49%, 0.757); 
+
+                    cursor: pointer;
+                }
+                button:hover{
+                   font-size: 1.5rem;
+                   box-shadow: 0px 9px 1px hsl(154, 61%, 36%); 
+                }
+                .terms-and-service{
+                    text-align: center;
+                    color: rgb(0,0,0,.4);
+                    font-weight: 500;
+                    margin-top: 1rem;
+                    a{
+                        color: $Red;
+                        font-weight: 600;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@include responsive;

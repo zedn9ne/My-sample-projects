@@ -1,0 +1,199 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #06283D;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 5%;
+    h1{
+        font-family: 'Roboto' ,sans-serif;
+        text-transform: capitalize;
+        color: #fff;
+        span{
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: orangered;
+        }
+    }
+}
+
+//  Container ///////////////
+
+.container{
+    height: 70%;
+    position: relative;
+    background-color: #fff;
+    width: 400px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    font-family: 'Roboto' , sans-serif;
+    transition: .6s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+// Search Box //////////////
+.search-box{
+    width: 100%;
+    height:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input{
+        width: 70%;
+        padding-left: 1rem;
+        color: #06283D;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        border-radius: 1rem;
+        border: none;
+    }
+    input::placeholder{
+        color: #06283D;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+    }
+    button{
+        height: 50px;
+        width: 50px;
+        background-color: #fff;
+        border: none;
+        font-size: 1.3rem;
+        margin-left: .5rem;
+        color: #06283D;
+        cursor: pointer;
+        transition: .3s ease-out;
+        border-radius: 50%;
+    }
+    button:hover{
+        background-color: #06283D;
+        color: #fff;
+    }
+    i{
+        color: #06283D;
+        font-size: 1.7rem;
+        margin-right: .6rem;
+    }
+}
+
+// Not found 404 ////////////////
+.not-found{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // scale: 0;
+    // opacity: 0;
+    img{
+        width: 70%;
+        height: 70%;
+    }
+    p{
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        font-weight: 500;
+        font-family: 'Roboto' ,sans-serif;
+        text-transform: capitalize;
+    }
+}
+
+// Weather Box //////////////
+.weather-box{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    margin-bottom: 3rem;
+    visibility: visible;
+    // scale: 0;
+    // opacity: 0;
+    img{
+        margin-top: 3rem;
+        width: 60%;
+    }
+    .temperature{
+        color: #06283D;
+        margin-top: 1.3rem;
+        position: relative;
+        font-weight: 800;
+        font-size: 3rem;
+        span{
+            position: absolute;
+            font-size: 1rem;
+            font-weight: 600;
+            top: 3%;
+        }
+    }
+    .description{
+        font-weight: 500;
+        color: #06283D;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+    }
+}
+
+// Weather Details ////////////////
+.weather-details{
+    width: 100%;
+    height: 20%;
+    display: none;
+    justify-content: space-between;
+    padding: 0 3.5rem;
+    // scale: 0;
+    // opacity: 0;
+    .icon{
+        font-size: 1.8rem;
+        color: #06283D;
+        margin-right: .5rem;
+        height: 45px;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: #06283D;
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 1.3rem;
+        p{
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        span{
+            font-weight: 500;
+        }
+    }
+    .details{
+        height: 100px;
+        width: 20%;
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+    }
+
+    .fadeIn{
+        animation: .5s fadeIn forwards;
+        animation-delay: .5s;
+    }
+    @keyframes fadeIn {
+        to{
+            scale: 100 !important;
+            opacity: 100 !important;
+        }
+    }
+}

@@ -1,0 +1,146 @@
+
+//  Flex default costum
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flex-align-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+//  Responsive ///////////////////////////////////////
+@mixin responsive-all{
+    @media only screen and (max-width:425px){
+        .fixed-nav{
+            height: 90px;
+            .nav-toggle{
+                border: 1px solid whitesmoke !important;
+                color: whitesmoke !important;
+                box-shadow: inset 1px 1px 10px rgba(255, 255, 255, 0.546) !important;
+            }
+        }
+        // nav bar section  //////////////////////////
+        .nav-center{
+            display: flex;
+            flex-direction: column;
+            .nav-header{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                .nav-toggle{
+                    padding: 0;
+                    visibility: visible;
+                    border: 1px solid rgb(0,0,0,.2);
+                    box-shadow: 1px 1px 10px rgba(42, 42, 42, 0.703) ;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: .5rem;
+                    background-color: rgba(192, 192, 192, 0);
+                    transition:all .5s ease-in;
+                    cursor: pointer;
+                }
+                .nav-toggle-active{
+                    transform: rotate(405deg);
+                }
+            }
+            // links Container
+            .links-container{
+                display: flex;
+                max-width: 380px;
+                margin-top: .5rem;
+                transition: ease-in 0.3s ;
+                height: 0 ;
+                overflow: hidden;
+                .links{
+
+                   display: flex;
+                    a{
+                        transition: all 0.3s linear;
+                    }
+                    margin-top: .5rem;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding-left: 0;
+                    // links border radius
+                    .home{
+                        border-top-right-radius:2rem ;
+                        border-top-left-radius: .5rem;
+                    }
+                    .tours{
+                        border-bottom-left-radius: 2rem;
+                        background: none;
+                        border-bottom-right-radius: .5rem;
+                    }
+                    li{
+                        width: 100%;
+                        padding: .5rem .825rem;
+                        border-bottom: 1px solid rgb(0,0,0,.2);
+                        box-shadow: inset 0 1px 5px rgb(0,0,0,.2);
+
+                    }
+                }
+            }
+            // Links container active
+            .links-container-active{
+                border-top: 1px solid rgb(0,0,0,.2);
+                height: 200px;
+                
+            }
+        }
+        // banner section /////////////////////////////////
+        .banner{
+            max-width: 350px;
+            .banner-header{
+                margin-top: 2rem;
+            }
+            .container{
+                margin: 0 1rem;
+                max-width: 100%;
+                padding: 1rem;
+                p{
+                    max-width: 100%;
+                }
+                a{
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+        // Footer /////////////////// 
+        .footer{
+            padding: 0 1rem;
+            text-align: center;
+        }
+    }
+}
+
+// Keyframes /////////////////
+@keyframes bounce{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.25);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes bounce-hover{
+    0%{
+        transform: scale(1.25);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1.25);
+    }
+}

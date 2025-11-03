@@ -1,0 +1,147 @@
+@mixin circle {
+    width:        50px;
+    height:       50px;
+    border-radius: 50%;
+}
+
+
+@mixin Media ($value) {
+
+    @if $value == "pre-tablet" {
+        @media only screen and (min-width:425px) {
+            
+           body {
+            width: 100%;
+           } 
+        }
+    } 
+
+    @if $value == "min-tablet" {
+        @media only screen and (min-width:500px) {
+            
+           body {
+            width: 100%;
+
+             .container {
+                width: 100%;
+             }
+
+             .name {
+                padding-left: 2rem;
+             }
+           } 
+        }
+    }
+
+    @if $value == "laptop" {
+        @media only screen and (min-width:1440px) {
+            
+            .container {
+                width: 90%;
+
+                // patterns ///
+                .pattern {
+                    img{
+                        content: " ";
+                        content: url(/images/bg-pattern-top-desktop.svg);
+                        inset:           0;
+                        position: absolute;
+                        opacity:         1;
+                    }
+                    
+                    .bottom-pattern {
+                        content: url(/images/bg-pattern-bottom-desktop.svg);
+                        position: absolute;
+                    }
+                }   
+
+                .top-head{
+                    display:                  flex;
+                    flex-direction:            row;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    //headre section ///
+                    .header {
+                        flex-basis: 50%;
+
+                        #h1 {
+                            text-align: left;
+                            width:        400px;
+                            line-height: 2.8rem;
+                            font-size:     3rem;
+                        }
+
+                        .header-paragraph {
+                            font-size:   1.5rem;
+                            line-height: 1.8rem;
+                            width:        600px;
+                            text-align:    left;
+                            padding-left:  1rem;
+
+                            p{
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    // Rate Boxes ///
+                    .rate-boxes{
+                        width:         50%;
+                        margin-right: 8rem;
+
+                        .rate-box {
+                            flex-direction:     row;
+                            justify-content: center;
+                            align-items:     center;
+
+                            
+                            .stars {
+                                margin-right: 3rem;
+                            }
+
+                            .box-text {
+                                font-size:  1.5rem;
+                                font-weight:   600;
+                            }
+                        }
+
+                        .second-box {
+                            margin-left:  7rem;
+                        }
+                        .third-box {
+                            margin-left: 14rem;
+                        }
+                    }
+
+                    .rate-box {
+                        width: 650px;
+                    }
+                }
+
+                // Boxes Section ///
+                .content-boxes {
+                    display:        flex;
+                    flex-direction:  row;
+                    margin-top:     4rem; 
+                    height: 500px;
+
+                    .second-content-box{
+                    margin-top: 1.5rem;    
+                    
+                    }
+
+                    .third-content-box {
+                        margin-top: 3rem;
+                    }
+
+                .content-box{
+                        margin-right: 1.5rem;
+                        width:         420px;
+                        height:        250px;
+                    }
+                }
+            }
+        }
+    }
+}

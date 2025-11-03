@@ -1,0 +1,158 @@
+html{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: $bckg;
+    height: auto;
+    padding: 5rem 0;
+}
+.container{
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items:     center;
+    width: 100%;
+    height: 100%;
+    .saba{
+        width: auto;
+        color: $dark-grey;
+        margin-bottom: 3rem;
+        h1{
+            width: 570px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 1.6rem;
+            span{
+                position: relative;
+                font-family: 'Poppins';
+                color: $orange;
+                font-size: 2.5rem;
+                font-weight: 900;
+                transition: ease-in .2s;
+                animation-name: saba;
+                animation-duration: .5s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes saba {
+                0% {bottom:0;}
+                50% {bottom: 4px;}
+                100%{bottom: 0;}
+            }
+        }
+    }
+}
+// Title 
+ .title{
+    display: flex;
+    flex-direction:  column;
+    align-items:     center;
+    justify-content: center;
+    margin-bottom: 2rem;
+     h2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $dark-grey;
+        font-size: 2.2rem;
+        font-weight: 900;
+        .underline{
+            width: 50px;
+            height: 5px;
+            border-radius: 1rem;
+            background-color: $orange;
+            transition: ease-in .3s;
+         }
+     }       
+     h2:hover{
+        .underline{
+            width: 70px;
+            transition: ease-out .2s;
+        }
+     }
+}
+// Buttons !!!!!!!!!!
+.buttons{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    .btn{
+        width: auto;
+        padding: 5px 10px;
+        color: $orange;
+        background-color: $bckg;
+        border-radius: 1rem;
+        border: 1px solid $orange;
+        font-weight: 400;
+        font-size: .9rem;
+        cursor: pointer;
+        transition: ease-in .2s;
+    }
+    .btn:hover{
+        transition: ease-out .2s;
+        background-color: $orange;
+        color: white;
+    }
+}
+// Menu !!!!!!!!!
+.menu{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: repeat(3 ,150px);
+    gap: 3rem;
+    margin-top: 3rem;
+    .item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 500px;
+        max-height: 150px;
+        img{
+            background-size: cover;
+            width: 40%;
+            height: 120px;
+            border: 2px solid $orange;
+            border-radius: .3rem;
+        }
+        .item_info{
+            width: 70%;
+            max-height: 120px;
+            padding: 0 .7rem;
+            font-family: 'Poppins';
+            header{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid $grey;
+                margin-bottom: .5rem;
+                padding-bottom: .1rem;
+                .item_name{
+                    font-weight: 600;
+                    color: $dark-grey;
+                    transition: ease-in .2s;
+                    cursor: pointer;
+                }
+                .item_name:hover{
+                    transition: ease-out .2s;
+                    color: $orange;
+                }
+                .price{
+                    color: $dark-grey;
+                    font-weight: 600;
+                    color: $orange;
+                }
+            }
+            p{
+                width: 100%;
+                color: $dark-grey;
+                font-size: .9rem;
+            }
+        }
+    }
+}
+
+@include repons;

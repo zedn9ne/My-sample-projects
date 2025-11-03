@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&family=Roboto:wght@300;400;500;700;900&display=swap");
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bounce-hover {
+  0% {
+    transform: scale(1.25);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
+html {
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+.links, section, footer, h1, .explore-btn {
+  text-transform: capitalize;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: url(../picture/pexels-eberhard-grossgasteiger-1292115.jpg) center/cover no-repeat;
+  min-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .nav-toggle {
+  visibility: hidden;
+}
+
+.nav-bar {
+  width: 100%;
+  height: auto;
+  transition: all 0.1s ease-in;
+}
+.nav-bar .nav-center {
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-bar .nav-center .nav-header {
+  height: 50px;
+}
+.nav-bar .nav-center .nav-header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  font-style: italic;
+}
+.nav-bar .nav-center .nav-header h1 span {
+  color: #043f16;
+}
+.nav-bar .links-container {
+  width: 500px;
+}
+.nav-bar .links-container .links {
+  min-height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.nav-bar .links-container .links a {
+  transition: all 0.2s linear;
+  color: rgba(0, 0, 0, 0.8);
+  transition: all 0.2s ease-in;
+  font-weight: 500;
+}
+.nav-bar .links-container .links a:hover {
+  color: #043f16;
+  transition: all 0.2s linear;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #043f16;
+  transition: all 0.3s ease-out;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6) !important;
+}
+.fixed-nav h1 {
+  color: whitesmoke;
+}
+.fixed-nav .links-container .links a {
+  color: whitesmoke;
+}
+.fixed-nav .links-container .links a:hover {
+  color: black;
+}
+
+.banner {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.banner .banner-header h1 {
+  color: #043f16;
+  font-size: 2.8rem;
+}
+.banner .container {
+  max-width: 1000px;
+  margin: 0 2rem;
+  min-height: 266px;
+  box-shadow: inset 0px -5px 20px rgba(0, 0, 0, 0.6);
+  padding: 2rem 1rem;
+  border-radius: 0.825rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner .container p {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.banner .container a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.404);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  width: 170px;
+  height: 50px;
+  border-radius: 0.825rem;
+  color: whitesmoke;
+  transition: all ease-in 0.5s;
+}
+.banner .container a:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.9);
+  transition: ease-out 0.3s;
+  top: 1rem;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section .title {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.section .title span {
+  color: #043f16;
+}
+
+#about {
+  background: url(../picture/about.jpg);
+}
+
+#services {
+  background: url(../picture/service.jpg);
+}
+
+#tours {
+  background: url(../picture/tour.jpg);
+}
+
+.footer {
+  background-color: #043f16;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  font-family: "Inter";
+}
+
+.top-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 0.825rem;
+  position: fixed;
+  right: 1rem;
+  bottom: 2rem;
+  color: white;
+  font-size: 1.25rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 10px white;
+  animation: bounce 2s ease-in-out infinite;
+  transition: all 0.3s ease-out;
+  display: none;
+}
+
+.top-link-active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in 0.3s;
+}
+
+.top-link:hover {
+  animation: bounce-hover 2s infinite;
+  transition: ease-out 0.1s;
+}
+
+@media only screen and (max-width: 425px) {
+  .fixed-nav {
+    height: 90px;
+  }
+  .fixed-nav .nav-toggle {
+    border: 1px solid whitesmoke !important;
+    color: whitesmoke !important;
+    box-shadow: inset 1px 1px 10px rgba(255, 255, 255, 0.546) !important;
+  }
+  .nav-center {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-center .nav-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-center .nav-header .nav-toggle {
+    padding: 0;
+    visibility: visible;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 10px rgba(42, 42, 42, 0.703);
+    width: 35px;
+    height: 35px;
+    border-radius: 0.5rem;
+    background-color: rgba(192, 192, 192, 0);
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+  }
+  .nav-center .nav-header .nav-toggle-active {
+    transform: rotate(405deg);
+  }
+  .nav-center .links-container {
+    display: flex;
+    max-width: 380px;
+    margin-top: 0.5rem;
+    transition: ease-in 0.3s;
+    height: 0;
+    overflow: hidden;
+  }
+  .nav-center .links-container .links {
+    display: flex;
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+  .nav-center .links-container .links a {
+    transition: all 0.3s linear;
+  }
+  .nav-center .links-container .links .home {
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 0.5rem;
+  }
+  .nav-center .links-container .links .tours {
+    border-bottom-left-radius: 2rem;
+    background: none;
+    border-bottom-right-radius: 0.5rem;
+  }
+  .nav-center .links-container .links li {
+    width: 100%;
+    padding: 0.5rem 0.825rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.2);
+  }
+  .nav-center .links-container-active {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    height: 200px;
+  }
+  .banner {
+    max-width: 350px;
+  }
+  .banner .banner-header {
+    margin-top: 2rem;
+  }
+  .banner .container {
+    margin: 0 1rem;
+    max-width: 100%;
+    padding: 1rem;
+  }
+  .banner .container p {
+    max-width: 100%;
+  }
+  .banner .container a {
+    margin-top: 1.5rem;
+  }
+  .footer {
+    padding: 0 1rem;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

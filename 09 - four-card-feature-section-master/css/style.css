@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-family: "Poppins";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 98%);
+  padding: 90px 40px 70px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+}
+.header .first_line {
+  font-weight: 300;
+  font-size: 1.47rem;
+  color: hsl(234, 12%, 34%);
+}
+.header .second_line {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+.header .paragraph {
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 1.2rem 0 5rem;
+  color: hsl(229, 6%, 66%);
+  font-weight: 300;
+}
+
+.boxs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.boxs .box-1 {
+  border-top: 3px solid hsl(180, 62%, 55%);
+  grid-column: 1/2;
+  grid-row: 3/3;
+}
+.boxs .box-2 {
+  border-top: 3px solid hsl(0, 78%, 62%);
+  grid-column: 2/3;
+  grid-row: 2/2;
+}
+.boxs .box-3 {
+  border-top: 3px solid hsl(34, 97%, 64%);
+  grid-column: 2/3;
+  grid-row: 4;
+}
+.boxs .box-4 {
+  border-top: 3px solid hsl(212, 86%, 64%);
+  grid-column: 3/5;
+  grid-row: 3/3;
+}
+.boxs .box {
+  padding: 1.25rem 1.5625rem;
+  width: 300px;
+  height: 220px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+}
+.boxs .box .title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 0.75rem;
+}
+.boxs .box .boxs_paragraph {
+  font-weight: 300;
+  color: hsl(229, 6%, 66%);
+  font-size: 0.8rem;
+}
+.boxs .box .svg {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 80%;
+  top: 20%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+  }
+  .container .header {
+    max-width: 800px;
+  }
+  .container .header .first_line {
+    font-size: 2.5rem;
+    color: hsl(229, 6%, 66%);
+  }
+  .container .header .second_line {
+    font-size: 2.5rem;
+  }
+  .container .header .paragraph {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 800px;
+  }
+  .boxs {
+    grid-template-columns: repeat(3 auto);
+    grid-template-rows: auto auto 1px auto auto;
+    display: grid;
+    grid-gap: 1rem;
+  }
+  .boxs .box {
+    margin-bottom: 0;
+  }
+  .box-2 {
+    padding-top: rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .boxs .box {
+    width: 400px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

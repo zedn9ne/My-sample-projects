@@ -1,0 +1,83 @@
+html {
+    font-family: 'Poppins';
+}
+
+.container{
+    display:          flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items:     center;
+    background-color: $VeryLightGray;
+    padding:          90px 40px 70px;
+}
+
+// ====== Header ============ ///
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+
+    .first_line{
+        font-weight:     300;
+        font-size:   1.47rem;
+        color: $VeryDarkBlue;
+    }
+
+    .second_line{
+        color: $VeryDarkBlue;
+        font-weight:     600;
+    }
+
+    .paragraph{
+        text-align:    center;
+        font-size:      .9rem;
+        margin: 1.2rem 0 5rem;
+        color:   $GrayishBlue;
+        font-weight:      300;
+    }
+}
+
+// ====== Boexes ========= ///
+.boxs{
+    // padding: ;
+    display:                  flex;
+    flex-direction:         column;
+    align-items:            center;
+    justify-content: space-between;
+
+    @include border;
+
+    .box{
+        padding: 1.25rem 1.5625rem;
+        width:  300px;
+        height: 220px;
+        margin-bottom: 1.5rem;
+        box-shadow: 0px 5px 7px rgb(0,0,0,.2);
+        border-radius: .25rem;
+        // border-top: 3px solid $Red;
+
+        .title {
+            font-size:      1.4rem;
+            font-weight:       500;
+            color:   $VeryDarkBlue;
+            margin-bottom: 0.75rem;
+        }
+
+        .boxs_paragraph{
+            font-weight:    300;
+            color: $GrayishBlue;
+            font-size:    .8rem;
+        }
+
+        .svg{
+            width:        50px;
+            height:       50px;
+            position: relative;
+            left:          80%;
+            top:           20%;
+        }
+    }
+};
+@include respon;
