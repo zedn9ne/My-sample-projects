@@ -13,7 +13,7 @@ body{
     align-items:     center;
     width: 100%;
     height: 100%;
-    .saba{
+    .name{
         width: auto;
         color: $dark-grey;
         margin-bottom: 3rem;
@@ -30,11 +30,11 @@ body{
                 font-size: 2.5rem;
                 font-weight: 900;
                 transition: ease-in .2s;
-                animation-name: saba;
+                animation-name: name;
                 animation-duration: .5s;
                 animation-iteration-count: infinite;
             }
-            @keyframes saba {
+            @keyframes name {
                 0% {bottom:0;}
                 50% {bottom: 4px;}
                 100%{bottom: 0;}

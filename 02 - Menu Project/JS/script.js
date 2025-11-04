@@ -1,7 +1,7 @@
 const menu = [
     {
         id: 1,
-        title: 'Saba English Omelette',
+        title: ' English Omelette',
         category:'breakfast',
         price: 20,
         img: "./pictures/breakfast1.jpeg",
@@ -9,7 +9,7 @@ const menu = [
     },
     {
         id: 2,
-        title: 'Saba taco',
+        title: ' taco',
         category:'lunch',
         price: 13,
         img: "./pictures/breakfast3.jpeg",
@@ -17,7 +17,7 @@ const menu = [
     },
     {
         id: 3,
-        title: 'SabaBucks',
+        title: 'Bucks',
         category:'drinks',
         price: 5,
         img : "./pictures/starBucksshake.jpeg",
@@ -25,7 +25,7 @@ const menu = [
     },
     {
         id: 4,
-        title: 'Saba Biskivit',
+        title: ' Biskivit',
         category:'shakes',
         price: 25,
         img : "./pictures/shake4.jpeg",
@@ -33,7 +33,7 @@ const menu = [
     },
     {
         id: 5,
-        title: 'Saba Snack',
+        title: ' Snack',
         category:'lunch',
         price: 12,
         img : "./pictures/snack1.jpeg",
@@ -41,7 +41,7 @@ const menu = [
     },
     {
         id: 6,
-        title: 'Saba Speacialdish',
+        title: ' Speacialdish',
         category:'lunch',
         price: 35,
         img : "./pictures/photo-1598514983318-2f64f8f4796c.jpeg",
@@ -57,7 +57,7 @@ const menu = [
     },
     {
         id: 8,
-        title: 'Saba Manhattan',
+        title: ' Manhattan',
         category:'drinks',
         price: 10,
         img : "./pictures/manhattancocktail.jpeg" ,
@@ -65,7 +65,7 @@ const menu = [
     },
     {
         id: 9,
-        title: 'Saba tarkibi porrrrrroooo',
+        title: ' tarkibi porrrrrroooo',
         category:'breakfast',
         price: 30,
         img : "./pictures/breakfast.jpeg",
@@ -73,7 +73,7 @@ const menu = [
     },
     {
         id: 10,
-        title: 'Saba sagiaragh',
+        title: ' sagiaragh',
         category:'drinks',
         price: 5,
         img : "./pictures/cocktail1.jpeg",
@@ -81,7 +81,7 @@ const menu = [
     },
     {
         id: 11,
-        title: 'Sababurger',
+        title: 'burger',
         category:'lunch',
         price: 17,
         img : "./pictures/lunch3.jpeg",
@@ -97,7 +97,7 @@ const menu = [
     },
     {
         id: 13,
-        title: 'Saba latte',
+        title: ' latte',
         category:'drinks',
         price: 10,
         img : "./pictures/hotdrinks1.jpeg",
@@ -113,7 +113,7 @@ const menu = [
     },
     {
         id: 15,
-        title: 'Saba speacial shake',
+        title: ' speacial shake',
         category:'shakes',
         price: 15,
         img : "./pictures/shake3.jpeg",
@@ -121,7 +121,7 @@ const menu = [
     },
     {
         id: 16,
-        title: 'Saba pancake🥹',
+        title: ' pancake🥹',
         category:'breakfast',
         price: 100,
         img : "./pictures/breakfastpancake.jpeg",
@@ -129,7 +129,7 @@ const menu = [
     },
     {
         id: 17,
-        title: 'Saba orange cocktail',
+        title: ' orange cocktail',
         category:'breakfast',
         price: 8,
         img: "./pictures/cocktail2.jpeg",
@@ -137,7 +137,7 @@ const menu = [
     },
     {
         id: 18,
-        title: 'Saba cocktail',
+        title: ' cocktail',
         category:'drinks',
         price: 12,
         img: "./pictures/cocktail4.jpeg",
